@@ -1,6 +1,8 @@
 ---
 title: so, i have a blog now.
-date: 2026-11-7
+date: 2026-11-07
+desc: my first blog!
+thumbnail: https://cdn.hackclub.com/01a1aab0-d5ad-760e-b7bf-0b84bd953082/Slick_gZLocVMFzc.png
 ---
 
 I'm not quite sure what to write in it. I remember at the beginning of this process of making a blog (or at least, asking Claude to make a blog) that I had something I wanted to write about, but to be honest, I'm not quite sure I remember what it is. Maybe it was about a project I was interested in? An idea that I had about Hack Club? Whatever it was, I can't remember.

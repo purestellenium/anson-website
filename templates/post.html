@@ -11,10 +11,12 @@
     <body>
         <div class="content">
             <a href="../blog" onclick="if (document.referrer.startsWith(location.origin)) { history.back(); return false; }" style="text-decoration: none; position: absolute; left: 1rem; top: 1rem;"><svg style="width: 1em; height: 1em; vertical-align: -0.15em;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="3.0" class="solar solar-arrow-left-linear"><path d="M20 12H4M10 18L4 12L10 6" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/></svg> back</a>
-            <h1 style="font-size: 2.25rem; margin-top: 2rem; margin-bottom: 0.5rem;">so, i have a blog now.</h1>
-            <h3 style="font-size: 1.25rem; margin: 0;">November 7th, 2026</h2>
-            <img style="object-fit: cover; height: 42vh; width: 100%; margin-top: 1rem;"src="https://cdn.hackclub.com/01a1aab0-d5ad-760e-b7bf-0b84bd953082/Slick_gZLocVMFzc.png"/>
-            {{content}}
+            <h1 style="font-size: 2.25rem; margin-top: 2rem; margin-bottom: 0.5rem;">{{title}}</h1>
+            <h3 style="font-size: 1.25rem; margin: 0;">{{date}}</h2>
+            <img style="object-fit: cover; height: 42vh; width: 100%; margin-top: 1rem;"src="{{thumbnail}}"/>
+            <div class="blog-post">
+                {{content}}
+            </div>
         </div>
     </body>
 </html>
