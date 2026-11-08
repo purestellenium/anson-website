@@ -14,7 +14,7 @@ body {
 }
 
 .content {
-    width: min(50rem, 100%);
+    width: min(60rem, 100%);
     box-sizing: border-box;
     margin: auto;
     background-color: white;
@@ -23,6 +23,7 @@ body {
     border-radius: 1rem;
     border: 0.2rem solid black;
     padding-bottom: 1.5rem;
+    position: relative;
 }
 
 p {
@@ -31,15 +32,13 @@ p {
 
 .profile {
     display: flex;
-    justify-content: center;
-    margin: auto;
-    width: fit-content;
-    gap: 5rem;
+    width: 100%;
 }
 
 .profile img {
     width: auto;
-    height: 9rem;
+    height: 10rem;
+    margin-left: auto;
 }
 
 .section-header {

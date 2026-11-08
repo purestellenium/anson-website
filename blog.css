@@ -1,0 +1,62 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+.posts {
+    margin: 2rem 0 0;
+}
+
+.posts a {
+    text-decoration: none;
+}
+
+.post-card {
+    background-color: #e3e3f3;
+    border-radius: 1rem;
+    display: flex;
+    width: 100%;
+    color: black;
+    transition: background-color 0.35s;
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.posts > a:last-child .post-card {
+    margin-bottom: 0;
+}
+
+.post-card:hover {
+    background-color: #d1d1ec;
+}
+
+.post-title {
+    margin: 0 0 1rem;
+}
+
+.post-details {
+    margin: 2rem;
+}
+
+.post-desc {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.post-img {
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    object-position: center;
+    height: 10rem;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.post-date {
+    position: absolute;
+    background-color: #e3e3f3;
+    font-size: 0.7rem;
+    padding: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 9999999999px;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    margin: 0;
+}

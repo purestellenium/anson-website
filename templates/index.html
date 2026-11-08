@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title>blog - anson website!!!</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../blog.css">
+        <link rel="icon" href="../anson-image.jpeg">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="content">
+            <a href=".." onclick="if (document.referrer.startsWith(location.origin)) { history.back(); return false; }" style="text-decoration: none; position: absolute; left: 1rem; top: 1rem;"><svg style="width: 1em; height: 1em; vertical-align: -0.15em;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="3.0" class="solar solar-arrow-left-linear"><path d="M20 12H4M10 18L4 12L10 6" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/></svg> back</a>
+            <h1 style="margin-bottom: 0.5rem;">blog</h1>
+            {{posts}}
+        </div>
+    </body>
+</html>
