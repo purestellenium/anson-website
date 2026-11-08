@@ -34,7 +34,7 @@ for (const post_filename of post_filenames) {
 
 const sortedPosts = posts.sort((a, b) => b.date.getTime() - a.date.getTime());
 
-const cards = posts.map((post) => `
+const cards = sortedPosts.map((post) => `
     <a href="${post.slug}.html">
         <div class="post-card">
             <p class="post-date">${CALENDAR_SVG} ${formatDate(post.date)}</p>
