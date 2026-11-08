@@ -2,7 +2,8 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
     font-family: "Jua", sans-serif;
     font-size: 24px;
     background-image: repeating-linear-gradient(45deg,#e3e3f3 0 32px,#0000 32px 64px);
@@ -13,13 +14,15 @@ body {
 }
 
 .content {
-    width: fit-content;
+    width: min(50rem, 100%);
+    box-sizing: border-box;
     margin: auto;
     background-color: white;
     padding: 2rem;
     height: 100%;
     border-radius: 1rem;
     border: 0.2rem solid black;
+    padding-bottom: 1.5rem;
 }
 
 p {
@@ -40,13 +43,13 @@ p {
 }
 
 .section-header {
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .projects {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1rem;
 }
 
 .project-card {
@@ -56,19 +59,66 @@ p {
     background-color: #e3e3f3;
     border-radius: 1rem;
     padding: 1rem;
+    padding-top: 0;
+}
+
+.project-title {
+    margin: 0;
+}
+
+.project-text {
+    margin: 1rem 0 0.75rem;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-links {
+    justify-content: flex-end;
+    width: 100%;
+    display: flex;
+    gap: 0.4rem;
+    font-size: 1.25rem;
+    align-items: center;
+}
+
+.project-links a {
+    margin-left: 0.25rem;
+}
+
+.project-desc {
+    font-size: 1.1rem;
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
 .project-img {
     height: 8rem;
+    border-radius: 1rem;
 }
 
 a {
     color: #9d9deb; 
     text-decoration: dotted underline;
+    transition: color 0.35s;
+}
+
+a:hover {
+    color: #b3b3ea;
 }
 
 .footer {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
+}
+
+.footer svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    margin-left: -0.07em;
 }
