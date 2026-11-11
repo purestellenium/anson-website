@@ -14,4 +14,4 @@ i was really bored this saturday and i heard anson was in the bay area for calha
 no it's already perfect. you can fork it if you want but i will not be accepting prs.
 
 ## ai usage
-none... obviously :sob:
+very very minor AI usage to fix stupid errors in the blog's `build.js`
